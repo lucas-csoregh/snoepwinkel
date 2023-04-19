@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+.hide {
+    display: none;
+}
+.verborgen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -1000px;
+}
+
+/* NAV */
+nav a {
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    font-size: 20px;
+}
+/* CSS HEX
+ #95AEDAff;
+ #5664ABff;
+ #7087B9ff;
+ #7892CAff;
+ #000007ff;
+*/
+
+.activebreadcrumb {
+     list-style-type: none;
+
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    /* background-color: black; */
+    /* font-size: 20px; */
+
+    /* center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5664ABff;
+    transform: translateY(-3px);
+}
+
+.active {
+    background-color: #5664ABff;
+}
+nav ul li:hover, .activebreadcrumb:hover {
+    background-color: #95AEDAff;
+    color: white;
+}
+nav ul li a:hover, .activebreadcrumb a:hover {
+    color: white;
+}
+nav {
+    padding-bottom: 20px;
+}
+a:hover {
+    color: #95AEDAff;
+}
+
+nav ul li a {
+    color: white;
+}
+
+/* CENTER */
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+/* FLEXBOX */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    align-self: center;
+    border-radius: 5px;
+}
+
+footer p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.p20 {
+    margin: 20px;
+}
+h3, h2 {
+    font-size: 25px;
+}
+
+#Contact_section address, #FAQ_section p {
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 15px;
+}
+
+.drop:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-11px) translateY(5px);
+}
+.drop ul li {
+    margin: 5px 0 0 0;
+}
+
+
+#puntenOver {
+    text-align: end;
+}
+
+.red {
+    color: red;
+}
+
+ol {
+    list-style-type: none;
+    justify-content: center;
+    padding: 20px;
+}
+ol span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.end {
+    justify-content: end;
+}
+
+/* REMOVE LATER */
+/*
+td, th {
+    border: 1px solid red;
+}
+*/

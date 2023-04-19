@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>The Rare Candy</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/bevestiging.css">
+
+    <!-- G Font - Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap" rel="stylesheet">
+    <script type="module" src="../script/dyn_result.js"></script>
+</head>
+<body id="productdetails" class="bevestigingsgrid">
+
+<header class="grid-header flex-col">
+    <div class="flex-row center p20">
+        <img src="../media/theRareCandy64x64.png" alt="Het Logo">
+        <h1 class="text-center">The Rare Candy</h1>
+    </div>
+    <nav>
+        <h2 class="verborgen">Hoofdnavigatie</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="drop"><a href="../html/producten.html">Producten</a>
+                <ul class="hide dropdown">
+                    <li><a href="../html/producten.html#Snoep">Snoep</a></li>
+                    <li><a href="../html/producten.html#Koeken">Koeken</a></li>
+                    <li><a href="../html/producten.html#Chocolade">Chocolade</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="../html/personalisatie.html">Custom Puntzak</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><a href="../html/faq.html">FAQ</a></li>
+        </ul>
+
+        <ol class="flex-row">
+            <li><a href="../index.html">Home</a><span>/</span></li>
+            <li><a href="personalisatie.html">Custom Puntzak</a><span>/</span></li>
+            <li><a class="activebreadcrumb" href="#">Bevestigingspagina</a></li>
+        </ol>
+    </nav>
+</header>
+<main class="grid-main">
+    <article >
+        <h2>Bevestiginspagina</h2>
+        <div id="content">
+            <div id="details" class="flex-col"><strong>Jouw details</strong></div>
+
+            <div id="address" class="flex-col"><strong>Jouw adres</strong></div>
+
+            <div id="choices" class="flex-col"><strong>Jouw keuzes</strong></div>
+
+            <table id="choicesWithPics">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </article>
+</main>
+<footer class="grid-footer">
+    <p class="text-center">Copyright &#169;2022 KdG</p>
+</footer>
+</body>
+</html>

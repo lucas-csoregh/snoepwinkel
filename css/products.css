@@ -1,0 +1,78 @@
+.prodgrid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: '. .  gheader  . .'
+                         '. gfilter gmain . .'
+                         '. . gfooter . .';
+    height: 97vh;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h3, h2 {
+    margin-bottom: 5px;
+}
+
+#Koeken h3, #Chocolade h3 {
+    padding-top: 30px;
+}
+
+.prodgrid > .grid-header {
+    grid-area: gheader;
+}
+.prodgrid > .grid-main {
+    grid-area: gmain;
+    width: 733px;
+}
+.prodgrid > .grid-footer {
+    grid-area: gfooter;
+}
+.prodgrid > .grid-filter {
+    grid-area: gfilter;
+}
+.grid-filter ol {
+    outline: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    margin-bottom: 10px;
+}
+
+.productCategorie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 15px 15px 0 15px;
+}
+.productCategorie article{
+    padding-bottom: 15px;
+}
+
+
+.all {
+    display: none;
+}
+input[id="all"]:checked ~.grid-main section div .all,
+input[id="zacht"]:checked ~.grid-main section div .zacht,
+input[id="hard"]:checked ~.grid-main section div .hard,
+input[id="zoet"]:checked ~.grid-main section div .zoet,
+input[id="zuur"]:checked ~ .grid-main section div .zuur {
+    display: inline-block;
+}
+
+input[id="all"]:checked ~ .grid-filter ol li label[for="all"],
+input[id="zacht"]:checked ~ .grid-filter ol li label[for="zacht"],
+input[id="hard"]:checked ~ .grid-filter ol li label[for="hard"],
+input[id="zoet"]:checked ~ .grid-filter ol li label[for="zoet"],
+input[id="zuur"]:checked ~ .grid-filter ol li label[for="zuur"] {
+    color: #5664ABff;
+    font-weight: bold;
+}
+
+ol {
+    list-style-type: none;
+}

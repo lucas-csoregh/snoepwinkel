@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Personaliseer je eigen puntzak</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/productdetails.css">
+    
+    <link rel="stylesheet" href="../css/personalisatie.css">
+
+    <!-- G Font - Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap" rel="stylesheet">
+
+    <!-- gebruik 'defer' wanneer je javascript gaat importeren-->
+
+    <script type="module" src="../script/dyn_form.js"></script>
+    <script defer src="../script/form_validation.js"></script>
+    <script defer src="../script/project.js"></script>
+</head>
+<body class="detailgrid">
+
+<header class="grid-header flex-col">
+    <div class="flex-row center p20">
+        <img src="../media/theRareCandy64x64.png" alt="Het Logo">
+        <h1 class="text-center">The Rare Candy</h1>
+    </div>
+
+    <nav>
+        <h2 class="verborgen">Hoofdnavigatie</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="drop"><a href="producten.html">Producten</a>
+                <ul class="hide dropdown">
+                    <li><a href="producten.html#Snoep">Snoep</a></li>
+                    <li><a href="producten.html#Koeken">Koeken</a></li>
+                    <li><a href="producten.html#Chocolade">Chocolade</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="personalisatie.html">Custom Puntzak</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="grid-main">
+    <article>
+        <h2 class="verborgen">Personaliseer</h2>
+        <form class="flex-col" action="bevestigingspagina.html" method="GET">
+            <div>
+                <div class="flex-col">
+                    <label for="voornaam">Voornaam</label>
+
+                    <!-- <input id="voornaam" maxLength="50" name="voornaam" type="text" value="John"> -->
+                    <input id="voornaam" maxLength="50" name="voornaam" type="text" value="John">
+
+                    <span class="verborgen formErr voornaamErr">Uw voornaam mag geen spaties bevatten</span>
+                </div>
+
+                <div class="flex-col">
+                    <label for="achternaam">Achternaam</label>
+
+                    <!--<input id="achternaam" maxLength="50" name="achternaam" type="text" placeholder="Doe">-->
+                    <input id="achternaam" maxLength="50" name="achternaam" type="text" value="Doe">
+
+                    <span class="verborgen formErr achternaamErr">Uw achternaam mag geen spaties bevatten</span>
+                </div>
+
+                <div class="flex-col">
+                    <label for="email">Mail</label>
+                    <!--<input name="email" type="email" id="email" placeholder="john.doe@student.kdg.be" required>-->
+                    <input name="email" type="email" id="email" value="john.doe@student.kdg.be" required>
+                    <span class="verborgen formErr emailErr_addDot">U email moet tenminste een punt bevatten</span>
+                    <span class="verborgen formErr emailErr_noEndDot">Uw email adres mag niet eindigen met een punt</span>
+                    <span class="verborgen formErr emailErr_noStartDot">Uw email adres mag niet beginnen met een punt</span>
+                    <span class="verborgen formErr emailErr_repDots">Uw email mag geen herhalende punten bevatten</span>
+                    <span class="verborgen formErr emailErr_suffix">Uw email moet eindigen met '@kdg.be' of '@student.kdg.be'</span>
+                </div>
+
+                <div class="flex-col">
+                    <label for="tel">Tel</label>
+
+                    <!--<input name="tel" type="tel" id="tel" placeholder="+32-487-787-142" required>-->
+                    <input name="tel" type="tel" id="tel" value="+32487787142" required>
+
+                    <span class="verborgen formErr telErr">Ongeldig telefoonnummer</span>
+                </div>
+
+                <div class="flex-col">
+                    <label for="tel">Straatnaam</label>
+
+                    <!--<input name="straatnaam" type="text" id="straatnaam" placeholder="Hans memlingstraat" required>-->
+                    <input name="straatnaam" type="text" id="straatnaam" value="Hans memlingstraat" required>
+
+                    <span class="verborgen formErr straatnaamErr">Straatnaam ongeldig</span>
+                </div>
+                <div class="flex-col">
+                    <label for="tel">nummer met toevoegingen</label>
+
+                    <!--<input name="huisnr" type="text" id="huisnr" placeholder="13 bus.3" required>-->
+                    <input name="huisnr" type="text" id="huisnr" value="13 bus.3" required>
+
+
+                    <span class="verborgen formErr huisnrErr">Huisnummer ongeldig</span>
+                </div>
+                <div class="flex-col">
+                    <label for="gemeente">Gemeente</label>
+
+                    <!--<input name="gemeente" type="text" id="gemeente" placeholder="2900 Schoten" required>-->
+                    <input name="gemeente" type="text" id="gemeente" value="2900 Schoten" required>
+
+                    <span class="verborgen formErr gemeenteErr">Gemeente ongeldig</span>
+                </div>
+            </div>
+
+            <section>
+            <h3>Hoeveel snoep wil je kopen?</h3>
+            <div id="radioErr">
+                <div>
+                    <!--<input type="radio" name="grams" id="100g" value="100g" required>-->
+                    <input type="radio" name="grams" id="100g" value="100g" required checked >
+                    <label for="100g">100g</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="grams" id="200g" value="200g">
+                    <label for="200g">200g</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="grams" id="300g" value="300g">
+                    <label for="300g">300g</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="grams" id="400g" value="400g">
+                    <label for="400g">400g</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="grams" id="500g" value="500g">
+                    <label for="500g">500g</label>
+                </div>
+            </div>
+            </section>
+
+            <section>
+            <h3>Welke kleur zak wil je hebben?</h3>
+            <select name="zakKleur" id="zakKleur" required>
+                <option value="">Geen</option>
+                <!--<option value="Rood" class="redText" selected>Rood</option>-->
+                <option value="Rood" class="redText" selected>Rood</option>
+                <option value="Oranje" class="orangeText">Oranje</option>
+                <option value="Geel" class="yellowText">Geel</option>
+                <option value="Groen" class="greenText">Groen</option>
+                <option value="Blauw" class="blueText">Blauw</option>
+                <option value="Indigo" class="indigoText">Indigo</option>
+                <option value="Violet" class="violetText">Violet</option>
+            </select>
+            </section>
+
+
+            <span id="puntenOver" class="err_puntenOver verborgen red">Je hebt nog wat punten over!</span>
+            <section class="items">
+                <h3 class="verborgen">Selecteer je ingredienten</h3>
+
+                <article>
+                    <h4 class="verborgen">Ingredienten in de aanbeiding</h4>
+                    <table id="ingredienten">
+                    </table>
+                </article>
+            </section>
+
+            <input type="submit" value="Submit">
+            <span id="submitErr"></span>
+            <span class="verborgen formErr emailErr_addDot">U email moet tenminste een punt bevatten</span>
+            <span class="verborgen formErr emailErr_noEndDot">Uw email adres mag niet eindigen met een punt</span>
+            <span class="verborgen formErr emailErr_noStartDot">Uw email adres mag niet beginnen met een punt</span>
+            <span class="verborgen formErr emailErr_repDots">Uw email mag geen herhalende punten bevatten</span>
+            <span class="verborgen formErr emailErr_suffix">Uw email moet eindigen met '@kdg.be' of '@student.kdg.be'</span>
+            <span class="verborgen formErr voornaamErr">Uw voornaam mag geen spaties bevatten</span>
+            <span class="verborgen formErr achternaamErr">Uw achternaam mag geen spaties bevatten</span>
+            <span class="verborgen formErr telErr">Ongeldig telefoonnummer</span>
+            <span class="err_puntenOver verborgen red">Je hebt nog wat punten over!</span>
+            <span class="verborgen formErr gemeenteErr">Gemeente ongeldig</span>
+            <span class="verborgen formErr huisnrErr">Huisnummer ongeldig</span>
+            <span class="verborgen formErr straatnaamErr">Straatnaam ongeldig</span>
+        </form>
+    </article>
+</main>
+
+<footer class="grid-footer">
+    <p class="text-center">Copyright &#169;2022 KdG</p>
+</footer>
+
+</body>
+</html>

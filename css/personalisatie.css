@@ -1,0 +1,94 @@
+th {
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+/*
+td {
+    background-color: green;
+    border: 3px solid black;
+}
+*/
+th {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.score { width: 4ch; }
+.score, #punten {
+    display: block;
+}
+#punten {
+    font-weight: bold;
+}
+.score {
+    text-align: right;
+    padding: 5px;
+}
+#points,
+.counter {
+    justify-content: end;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+.counter input {
+    text-align: center;
+}
+
+.redText { color: red; }
+.orangeText { color: orange }
+.yellowText { color: yellow }
+.greenText { color: green }
+.blueText { color: blue }
+.indigoText { color: indigo }
+.violetText { color: violet }
+
+td, th {
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+/* add this class to <span> elements with a .formErr class that also contain ERRONEOUS input */
+.formErr {
+    color: red;
+}
+/* add this class to <input> elements with a .formErr class that also contain ERRONEOUS input */
+.formErrTrueInput {
+    outline: 1px solid red;
+    border-radius: 3px;
+}
+/* add this class to <input> elements with a .formErr class that also contain ACCEPTED input */
+.validinput {
+    outline: 1px solid lightgreen;
+    border-radius: 3px;
+}
+
+/* add this class to <span> elements with a .formErr class that also contain ACCEPTED input */
+/*
+.formErrFalseSpan {
+    color: green;
+}
+*/
+input, select {
+    padding: 2px;
+}
+.flex-col {
+    padding-bottom: 15px;
+}
+#zakKleur {
+    margin-bottom: 15px;
+}
+.flex-col:last-of-type {
+    padding-bottom: 5px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+

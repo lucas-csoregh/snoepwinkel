@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Producten</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <!-- G Font - Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap" rel="stylesheet">
+</head>
+<body class="prodgrid">
+
+<input class="verborgen" type="radio" id="all" value="all" name="filter" checked="checked">
+<input class="verborgen" type="radio" id="hard" value="hard" name="filter">
+<input class="verborgen" type="radio" id="zacht" value="zacht" name="filter">
+<input class="verborgen" type="radio" id="zoet" value="zoet" name="filter">
+<input class="verborgen" type="radio" id="zuur" value="zuur" name="filter">
+
+<header class="grid-header flex-col">
+    <div class="flex-row center p20">
+        <img src="../media/theRareCandy64x64.png" alt="Het Logo">
+        <h1 class="text-center">The Rare Candy</h1>
+    </div>
+
+    <nav>
+        <h2 class="verborgen">Hoofdnavigatie</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active drop"><a href="producten.html">Producten</a>
+                <ul class="hide dropdown">
+                    <li><a href="producten.html#Snoep">Snoep</a></li>
+                    <li><a href="producten.html#Koeken">Koeken</a></li>
+                    <li><a href="producten.html#Chocolade">Chocolade</a></li>
+                </ul>
+            </li>
+            <li><a href="personalisatie.html">Custom Puntzak</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="grid-filter">
+    <h2>Filters</h2>
+    <!--
+    <input type="checkbox" id="all" value="all" name="filter" checked="checked">&nbsp;Alle<br>
+    <input type="checkbox" id="hard" value="hard" name="filter">&nbsp;Hard<br>
+    <input type="checkbox" id="zacht" value="zacht" name="filter">&nbsp;Zacht<br>
+    <input type="checkbox" id="zoet" value="zoet" name="filter">&nbsp;Zoet<br>
+    <input type="checkbox" id="zuur" value="zuur" name="filter">&nbsp;Zuur<br>
+    -->
+    <ol>
+        <li><label for="all">Alles</label></li>
+        <li><label for="hard">Hard</label></li>
+        <li><label for="zacht">Zacht</label></li>
+        <li><label for="zoet">Zoet</label></li>
+        <li><label for="zuur">Zuur</label></li>
+    </ol>
+</section>
+
+
+<main class="grid-main">
+    <section>
+    <h2 class="verborgen">Alle producten</h2>
+
+    <section id="Snoep">
+        <h3>Snoep</h3>
+        <div class="productCategorie">
+            <article class="all">
+                <!-- 1 -->
+                <a href="productdetails.html">
+                    <img src="/media/small/puntzak.jpg" alt="De Puntzak">
+                    <h4>De Puntzak</h4>
+                    <p>&euro;8,97</p>
+                </a>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 2 -->
+                <a href="productdetails_blauweDolfijntjes.html">
+                    <img src="/media/small/dolfijn.jpg" alt="Dolfijntjes">
+                    <h4>Blauwe Dolfijnen</h4>
+                    <p>&euro;3,05</p>
+                </a>
+            </article>
+            <article class="all zoet">
+                <!-- 3 -->
+                <a href="productdetails_cuberdons.html">
+                    <img src="/media/small/cuberdons.jpg" alt="">
+                    <h4>Cuberdons</h4>
+                    <p>&euro;3,95</p>
+                </a>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 4 -->
+                <img src="/media/small/gummybears.jpg" alt="">
+                <h4>Gummybears</h4>
+                <p>&euro;2,94</p>
+            </article>
+            <article class="all zuur zacht">
+                <!-- 5 -->
+                <img src="/media/small/zure_tutters.jpg" alt="">
+                <h4>Zure tutters</h4>
+                <p>&euro;1,93</p>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 6 -->
+                <img src="/media/small/dracula.jpg" alt="">
+                <h4>Draculatandjes</h4>
+                <p>&euro;2,05</p>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 7 -->
+                <img src="/media/small/dropveters.jpg" alt="">
+                <h4>Dropveters</h4>
+                <p>&euro;1,99</p>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 8 -->
+                <img src="/media/small/kersjes.jpg" alt="">
+                <h4>Kersjes</h4>
+                <p>&euro;2,89</p>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 9 -->
+                <img src="/media/small/maoam.jpg" alt="">
+                <h4>MAOAM</h4>
+                <p>&euro;2,75</p>
+            </article>
+            <article class="all zoet zacht">
+                <!-- 10 -->
+                <img src="/media/small/smurfkes.jpg" alt="">
+                <h4>Smurfkes</h4>
+                <p>&euro;2,86</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="Chocolade">
+        <h3>Chocolade</h3>
+        <div class="productCategorie">
+            <article class="all zoet hard">
+                <!-- 1 -->
+                <img src="/media/small/toblerone.jpg" alt="Toblerone">
+                <h4>Toblerone</h4>
+                <p>&euro;22,95</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 2 -->
+                <img src="/media/small/ferrero.jpg" alt="Ferrero Rocher">
+                <h4>Ferrero Rocher</h4>
+                <p>&euro;3,19</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 3 -->
+                <img src="/media/small/mnms.jpg" alt="">
+                <h4>M&M's</h4>
+                <p>&euro;4,89</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 4 -->
+                <img src="/media/small/kinder_surprise.jpg" alt="">
+                <h4>Kinder Surprise</h4>
+                <p>&euro;1,95</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 5 -->
+                <img src="/media/small/kinder_maxi.jpg" alt="">
+                <h4>Kinder reepen</h4>
+                <p>&euro;4,99</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 6 -->
+                <img src="/media/small/mars.jpg" alt="">
+                <h4>Mars</h4>
+                <p>&euro;2,96</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="Koeken">
+        <h3>Koeken</h3>
+        <div class="productCategorie">
+            <article class="all zoet hard">
+                <!-- 1 -->
+                <img src="/media/small/jds.jpg" alt="Ferrero Rocher">
+                <h4>Jules Destrooper</h4>
+                <p>&euro;17,81</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 2 -->
+                <img src="/media/small/lotus.jpg" alt="Ferrero Rocher">
+                <h4>Lotus Speculoos</h4>
+                <p>&euro;3,75</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 3 -->
+                <img src="/media/small/macarons.jpg" alt="">
+                <h4>Macarons</h4>
+                <p>&euro;12,39</p>
+            </article>
+            <article class="all zoet hard">
+                <!-- 4 -->
+                <img src="/media/small/oreos.jpg" alt="">
+                <h4>Oreos</h4>
+                <p>&euro;3,98</p>
+            </article>
+        </div>
+    </section>
+    </section>
+</main>
+
+<footer class="grid-footer">
+    <p class="text-center">Copyright &#169;2022 KdG</p>
+</footer>
+</body>
+</html>
